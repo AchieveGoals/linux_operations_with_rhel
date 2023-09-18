@@ -42,7 +42,14 @@ There are no enabled repos.
 
 Note:  Using ```sudo``` with the ```subscription-manager register``` commands you can attach a subscription to your previously registered server. 
 
-If you use Ansible, this is something you can try
+    The key command, after you update your RHSM username, is:
+    ```sudo subscription-manager register --username="you@domain-at-rhaccess" --auto-attach --force```
+
+    In my case, I have to enter my local RHEL user password in response to 'sudo' password prompt, then be ready with the RHSM username's password
+    
+If you use Ansible, this is something you can try in exception handler and then be sure that your yum commands will run next time (or on retry)
+
+
 
 ```
 [my-server:larryt:nodb:~]$ sudo subscription-manager register --username="you@domain-at-rhaccess" --auto-attach --force
