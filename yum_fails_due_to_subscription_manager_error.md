@@ -52,7 +52,7 @@ The system with UUID {{mumble-mumble-mumble}} has been unregistered
 All local data removed
 Registering to: subscription.rhsm.redhat.com:443/subscription
 Password:
-The system has been registered with ID: 90f971bf-d888-478d-b250-39c5a42cc681
+The system has been registered with ID: {{mumble2-mumble2-mumble2}
 The registered system name is: my-server.my-domain.com
 Installed Product Current Status:
 Product Name: Red Hat Enterprise Linux Server
