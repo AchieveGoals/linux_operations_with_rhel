@@ -85,7 +85,7 @@ I can provide a link to the research and changes as udev specifications, and scs
 
 ```
 
-## lsscsi to map current kernel boot order assigned to discovered SCSI controllers at ~this boot time~: 
+## lsscsi to map current kernel boot order assigned to discovered SCSI controllers at *this boot time*: 
 
 ```
 [my-server:larryt:~]$ lsscsi
