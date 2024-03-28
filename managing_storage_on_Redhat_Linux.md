@@ -59,6 +59,7 @@ I can provide a link to the research and changes as udev specifications, and scs
     ```[TO DO](provide link to the PowerCLI script to that gets VM's Advanced Settings for disk ids, and set flag to expose SCSI IDs if not present)```
 
 ##  Novel bash one-liner to confirm assignments of /dev/sdXX devices to SCSI IDs
+Tip: As DB grows, I have GB and TB drives (not shown) -- Just change ```awk ' {print $3} '``` to ```awk ' { print $3 $4 } '``` to see 343.6Gi, etc. 
 
 ```
 [my-server:larryt:~]$ for dsk in `ls -l /dev/sd[a-z]* | awk ' {print $10 } '`; do sid=`/usr/lib/udev/scsi_id -gud $dsk`; size=`fdisk -l $dsk | grep 'Disk /dev/sd' | awk ' { print $3 }'`; echo $dsk $sid $size; done
